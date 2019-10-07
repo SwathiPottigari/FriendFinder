@@ -13,7 +13,7 @@ app.use(htmlRoutes);
 
 // This imports the htmlRoutes file
 var apiRoutes=require("./app/routing/apiRoutes");
-app.use(apiRoutes);
+app.use('/api',apiRoutes);
 
 // Starts the server to begin listening
 app.listen(PORT,function(){
