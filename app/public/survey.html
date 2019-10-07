@@ -8,6 +8,7 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -173,8 +174,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                        <h2 id="match-name"></h2>
-                        <img id="match-img" src="" alt="">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -184,7 +185,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -243,7 +244,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 
                 // });
 
-                $.post("/api/addSurvey",userData).then(function(data){
+                $.post("/api/addSurvey", userData).then(function (data) {
                     console.log(data);
                     // data-target="#exampleModal"
                     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
@@ -254,7 +255,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     // $("#exampleModal").modal("toggle");
                     // $("#start").attr('data-target',"#exampleModal");
                     $("#exampleModal").modal('toggle');
-                });                 
+                });
             } else {
                 alert("Please fill out all fields before submitting!");
             }
