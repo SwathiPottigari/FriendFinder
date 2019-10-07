@@ -27,6 +27,7 @@ router.post("/addSurvey", function (req, res) {
 
 // returns the list of all the friends 
 router.get("/friendsList",function(req,res){
+    console.log("Hello");
     return  res.json(friends);
 });
 
