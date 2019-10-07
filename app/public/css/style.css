@@ -3,5 +3,78 @@ body{
     height: 100%;
     width: 100%;
     background-image: url('../css/images/Background.png');
-    background-color: blue;
+}
+
+#mainHeading{
+    text-align: center;
+    color: rgb(97, 16, 151);
+    text-shadow: 3px 2px rgb(185, 145, 230);
+    font: bolder;
+    font-size: 100px;
+    font-style: italic;
+}
+
+#wrapper{
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#subtitleWrapper,.subTitle,.container{
+    color:blueviolet;
+    font-style: italic;    
+    width: 80%;
+    margin: 0 auto;
+}
+#subtitleWrapper,.container{
+    background-color: rgb(212, 190, 233);
+}
+.container{
+    color: rgb(142, 31, 175);
+   font-style: normal;
+}
+.custom-select,.form-control{
+    color:blueviolet;
+    background-color:rgb(238, 224, 245);
+    width: 25%;
+}
+.form-control{
+    margin: 0 auto;
+}
+
+button{
+    border-radius: 12px;
+    background-color:  rgb(185, 145, 230);
+    color: rgb(97, 16, 151);
+    /* margin-top: 1%; */
+    margin: 1%;
+}
+
+button:hover{
+    color:  rgb(185, 145, 230);
+    background-color: rgb(97, 16, 151);
+    cursor: pointer;
+}
+
+a{
+    color: rgb(97, 16, 151);
+    margin: 1%;
+}
+button:hover{
+    color:  rgb(185, 145, 230);
+    cursor: pointer;
+}
+
+footer{
+    /* background-color: rgb(185, 145, 230); */
+    border-top: 4px solid rgb(97, 16, 151);    
+    text-align: center;
+    font-size: small;
+    height: 30px;
+    color:rgb(97, 16, 151);
+    /* padding-top: 20px; */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20%;
 }

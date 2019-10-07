@@ -1,6 +1,7 @@
 var express=require("express");
 var app=express();
 
+// make express look in the folder for assets
 app.use(express.static(__dirname + '/app/public'));
 
 var PORT=process.env.PORT||3000;
